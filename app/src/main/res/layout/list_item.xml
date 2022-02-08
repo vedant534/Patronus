@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    xmlns:tool="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/plus"
+        android:layout_width="105dp"
+        android:layout_height="96dp"
+        android:src="@drawable/plus2"
+        />
+
+    <TextView
+        android:id="@+id/hospital_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:text="kjshdc"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:layout_toRightOf="@+id/plus"
+        android:orientation="vertical"
+
+        android:paddingLeft="16dp"
+
+        />
+
+
+
+
+
+</RelativeLayout>

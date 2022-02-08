@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Choose A default Message"
+        android:layout_margin="16dp"/>
+
+    <RadioGroup
+        android:id = "@+id/message_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id = "@+id/radiobutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text = "Help me my location is ..."
+            android:paddingLeft="16dp" />
+
+        <RadioButton
+            android:id = "@+id/radiobutton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text = "My location is ..."
+            android:paddingLeft="16dp" />
+
+        <RadioButton
+            android:id = "@+id/radiobutton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text = "I am in danger please help ..."
+            android:paddingLeft="16dp" />
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Custom Message"
+            android:layout_margin="16dp"
+            android:layout_weight="1"/>
+
+        <Switch
+            android:id = "@+id/custom_message_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id = "@+id/custom_message_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="AddCustomMessage"
+        android:inputType="textCapSentences"/>
+
+    <Button
+        android:id = "@+id/message_save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "SAVE"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Pickup Time"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id = "@+id/timer_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight = "1"
+            android:inputType="number"
+            android:layout_margin="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seconds"
+            android:layout_weight="1"
+            android:layout_margin="16dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id = "@+id/timer_save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginLeft="16dp"/>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ImageView
+        android:id="@+id/slide_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/first_aid_kit_big" />
+
+    <TextView
+        android:id="@+id/slide_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="300dp"
+
+        android:text="bjkscdbb"
+        android:textFontWeight="@integer/material_motion_duration_long_2"
+
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/slide_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="350dp"
+        android:textAlignment="center"
+        android:lineHeight="30dp"
+        android:textSize="20dp"
+        android:text="asdvbdsfdgbfnergfhnjmkmjgfdsghgjmhnbvfgnhm"
+
+
+        />
+</RelativeLayout>
